@@ -72,7 +72,7 @@ def contact_complete():
             flash("메일 주소는 필수입니다")
             is_vaild=False
         try:
-            validate_email(email)
+            validate_email(email)#이메일 형식 검사
         except EmailNotValidError:
             flash("메일 주소의 형식으로 입력해 주세요")
             is_vaild=False
