@@ -2,7 +2,7 @@ from datetime import datetime
 from apps.app import db
 from werkzeug.security import generate_password_hash
 
-class USer(db.Model):
+class User(db.Model):
     __tablename__="users"
     id= db.Column(db.Integer, primary_key=True)
     username=db.Column(db.String, index=True)
